@@ -1,0 +1,13 @@
+#!perl
+
+use strict;
+use warnings;
+use utf8;
+use 5.008009;
+
+use Bundle::Namespace::Everything;
+
+die "Please specify the namespace.\n" unless @ARGV;
+my $namespace = shift @ARGV;
+
+Bundle::Namespace::Everything::install_everything($namespace, @ARGV);
