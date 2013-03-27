@@ -2,7 +2,7 @@ use strict;
 use warnings;
 use Module::Build::Pluggable ( '+Module::Build::Pluggable::CPANfile', );
 
-my $builder = Module::Build->new(
+my $builder = Module::Build::Pluggable->new(
     name              => 'Bundle-Namespace-Everything',
     module_name       => 'Bundle::Namespace::Everything',
     script_files      => ['script/bundle-namespace-everything'],
